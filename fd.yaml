@@ -1009,8 +1009,8 @@ field_dictionary:
     - alias: Sa_z
       standard_name: atmosphere_height_at_bottom_level
     - alias: Sa_shum_16O
-    - standard_name: mass_fraction_of_h216o_in_atmosphere_bottom_level
+      standard_name: mass_fraction_of_h216o_in_atmosphere_bottom_level
     - alias: Sa_shum_18O
-    - standard_name: mass_fraction_of_h218o_in_atmosphere_bottom_level
+      standard_name: mass_fraction_of_h218o_in_atmosphere_bottom_level
     - alias: Sa_shum_HDO
       standard_name: mass_fraction_of_hdo_in_atmosphere_bottom_level
