@@ -44,6 +44,20 @@ field_dictionary:
         Air temperature is the bulk temperature of the air, not
         the surface (skin) temperature.
       "
+    - standard_name: air_temperature_at_reference_level
+      canonical_units: K
+      description: "
+        'Reference level' is 2m for air temperature.
+        Air temperature is the bulk temperature of the air, not
+        the surface (skin) temperature.
+      "
+    - standard_name: specific_humidity_at_reference_level
+      canonical_units: 1
+      description: "
+        'Reference level' is 2m for air temperature.
+        'specific' means per unit mass. Specific humidity is the mass
+        fraction of water vapor in (moist) air.
+      "
     - standard_name: specific_humidity_at_bottom_level
       canonical_units: 1
       description: "
@@ -739,6 +753,74 @@ field_dictionary:
         for the dust particles. In accordance with common usage in geophysical disciplines,
         'flux' implies per unit area, called 'flux density' in physics.
       "
+
+    - standard_name: surface_albedo_due_to_direct_near_infrared_radiation
+      canonical_units: 1
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. Albedo is the ratio of outgoing to incoming shortwave
+        irradiance, where 'shortwave irradiance' means that both the incoming and
+        outgoing radiation are integrated across the solar spectrum. To specify
+        the nature of the surface a cell_methods attribute should be
+        supplied as described in Chapter 7.3.3 of the CF Conventions.
+        The specification of a physical process by the phrase 'due_to_' process
+        means that the quantity named is a single term in a sum of terms which
+        together compose the general quantity named by omitting the phrase.
+      "
+    - standard_name: surface_albedo_due_to_diffuse_near_infrared_radiation
+      canonical_units: 1
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. Albedo is the ratio of outgoing to incoming shortwave
+        irradiance, where 'shortwave irradiance' means that both the incoming and
+        outgoing radiation are integrated across the solar spectrum. To specify
+        the nature of the surface a cell_methods attribute should be
+        supplied as described in Chapter 7.3.3 of the CF Conventions.
+        The specification of a physical process by the phrase 'due_to_' process
+        means that the quantity named is a single term in a sum of terms which
+        together compose the general quantity named by omitting the phrase.
+      "
+    - standard_name: surface_albedo_due_to_direct_visible_radiation
+      canonical_units: 1
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. Albedo is the ratio of outgoing to incoming shortwave
+        irradiance, where 'shortwave irradiance' means that both the incoming and
+        outgoing radiation are integrated across the solar spectrum. To specify
+        the nature of the surface a cell_methods attribute should be
+        supplied as described in Chapter 7.3.3 of the CF Conventions.
+        The specification of a physical process by the phrase 'due_to_' process
+        means that the quantity named is a single term in a sum of terms which
+        together compose the general quantity named by omitting the phrase.
+      "
+    - standard_name: surface_albedo_due_to_diffuse_visible_radiation
+      canonical_units: 1
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. Albedo is the ratio of outgoing to incoming shortwave
+        irradiance, where 'shortwave irradiance' means that both the incoming and
+        outgoing radiation are integrated across the solar spectrum. To specify
+        the nature of the surface a cell_methods attribute should be
+        supplied as described in Chapter 7.3.3 of the CF Conventions.
+        The specification of a physical process by the phrase 'due_to_' process
+        means that the quantity named is a single term in a sum of terms which
+        together compose the general quantity named by omitting the phrase.
+      "
+    - standard_name: surface_temperature
+      canonical_units: K
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. The surface temperature is the temperature at the interface,
+        not the bulk temperature of the medium above or below.
+        Unless indicated in the cell_methods attribute, a quantity is assumed
+        to apply to the whole area of each horizontal grid
+        box. Previously, the qualifier where_type was used to specify that
+        the quantity applies only to the part of the grid
+        box of the named type. Names containing the where_type qualifier
+        are deprecated and newly created data should use the cell_methods
+        attribute to indicate the horizontal area to which the quantity
+        applies.
+      "
     - standard_name: Fall_voc01
       canonical_units: molecules/m2/sec
     - standard_name: Fall_voc02
@@ -995,14 +1077,6 @@ field_dictionary:
       canonical_units: m
     - standard_name: Sg_topo10
       canonical_units: m
-    - standard_name: Si_anidf
-      canonical_units: 1
-    - standard_name: Si_anidr
-      canonical_units: 1
-    - standard_name: Si_avsdf
-      canonical_units: 1
-    - standard_name: Si_avsdr
-      canonical_units: 1
     - standard_name: Si_ifrac
       canonical_units: 1
     - standard_name: Si_ifrac_01
@@ -1033,14 +1107,6 @@ field_dictionary:
       canonical_units: K
     - standard_name: Si_u10
       canonical_units: m
-    - standard_name: Sl_anidf
-      canonical_units: 1
-    - standard_name: Sl_anidr
-      canonical_units: 1
-    - standard_name: Sl_avsdf
-      canonical_units: 1
-    - standard_name: Sl_avsdr
-      canonical_units: 1
     - standard_name: Sl_dd01
       canonical_units: cm/sec
     - standard_name: Sl_dd02
@@ -1281,14 +1347,6 @@ field_dictionary:
       canonical_units: deg C
     - standard_name: Sl_u10
       canonical_units: m
-    - standard_name: So_anidf
-      canonical_units: 1
-    - standard_name: So_anidr
-      canonical_units: 1
-    - standard_name: So_avsdf
-      canonical_units: 1
-    - standard_name: So_avsdr
-      canonical_units: 1
     - standard_name: So_bldepth
       canonical_units: m
     - standard_name: So_dhdx
@@ -1341,14 +1399,6 @@ field_dictionary:
       canonical_units: m/s
     - standard_name: Sw_vstokes
       canonical_units: m/s
-    - standard_name: Sx_anidf
-      canonical_units: 1
-    - standard_name: Sx_anidr
-      canonical_units: 1
-    - standard_name: Sx_avsdf
-      canonical_units: 1
-    - standard_name: Sx_avsdr
-      canonical_units: 1
     - standard_name: Sx_qref
       canonical_units: kg kg-1
     - standard_name: Sx_qref_16O
@@ -1417,6 +1467,10 @@ field_dictionary:
       standard_name: air_temperature_at_bottom_level
     - alias: Sa_shum
       standard_name: specific_humidity_at_bottom_level
+    - alias: [ Si_tref, Sl_tref, So_tref, Sx_tref ]
+      standard_name: air_temperature_at_reference_level
+    - alias: [ Si_qref, Sl_qref, So_qref, Sx_qref ]
+      standard_name: specific_humidity_at_reference_level
     - alias: Sa_co2diag
       standard_name: mole_fraction_of_diagnostic_carbon_dioxide_in_atmosphere_bottom_level
     - alias: Sa_co2prog
@@ -1561,3 +1615,13 @@ field_dictionary:
       standard_name: surface_upward_dust_flux_due_to_bin3_particles
     - alias: Fall_flxdst4
       standard_name: surface_upward_dust_flux_due_to_bin4_particles
+    - alias: [ Si_anidf, Sl_anidf, So_anidf, Sx_anidf ]
+      standard_name: surface_albedo_due_to_diffuse_near_infrared_radiation
+    - alias: [ Si_anidr, Sl_anidr, So_anidr, Sx_anidr ]
+      standard_name: surface_albedo_due_to_direct_near_infrared_radiation
+    - alias: [ Si_avsdf, Sl_avsdf, So_avsdf, Sx_avsdf ]
+      standard_name: surface_albedo_due_to_diffuse_visible_radiation
+    - alias: [ Si_avsdr, Sl_avsdr, So_avsdr, Sx_avsdr ]
+      standard_name: surface_albedo_due_to_direct_visible_radiation
+    - alias: [ Si_t, Sl_t, So_t, Sx_t ]
+      standard_name: surface_temperature
