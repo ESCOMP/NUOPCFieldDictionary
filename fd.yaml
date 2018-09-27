@@ -703,14 +703,42 @@ field_dictionary:
       canonical_units: kg/m2/sec
     - standard_name: Fall_fire10
       canonical_units: kg/m2/sec
-    - standard_name: Fall_flxdst1
+    - standard_name: surface_upward_dust_flux_due_to_bin1_particles
       canonical_units: kg m-2 s-1
-    - standard_name: Fall_flxdst2
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. 'Upward' indicates a vector component which is positive when directed
+        upward (negative downward). The number after 'bin' indicates the size interval
+        for the dust particles. In accordance with common usage in geophysical disciplines,
+        'flux' implies per unit area, called 'flux density' in physics.
+      "
+    - standard_name: surface_upward_dust_flux_due_to_bin2_particles
       canonical_units: kg m-2 s-1
-    - standard_name: Fall_flxdst3
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. 'Upward' indicates a vector component which is positive when directed
+        upward (negative downward). The number after 'bin' indicates the size interval
+        for the dust particles. In accordance with common usage in geophysical disciplines,
+        'flux' implies per unit area, called 'flux density' in physics.
+      "
+    - standard_name: surface_upward_dust_flux_due_to_bin3_particles
       canonical_units: kg m-2 s-1
-    - standard_name: Fall_flxdst4
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. 'Upward' indicates a vector component which is positive when directed
+        upward (negative downward). The number after 'bin' indicates the size interval
+        for the dust particles. In accordance with common usage in geophysical disciplines,
+        'flux' implies per unit area, called 'flux density' in physics.
+      "
+    - standard_name: surface_upward_dust_flux_due_to_bin4_particles
       canonical_units: kg m-2 s-1
+      description: "
+        The surface called 'surface' means the lower boundary of the
+        atmosphere. 'Upward' indicates a vector component which is positive when directed
+        upward (negative downward). The number after 'bin' indicates the size interval
+        for the dust particles. In accordance with common usage in geophysical disciplines,
+        'flux' implies per unit area, called 'flux density' in physics.
+      "
     - standard_name: Fall_voc01
       canonical_units: molecules/m2/sec
     - standard_name: Fall_voc02
@@ -1525,3 +1553,11 @@ field_dictionary:
       standard_name: surface_direct_downwelling_shortwave_flux_in_air_due_to_visible_radiation
     - alias: Faxa_swnet
       standard_name: surface_net_downward_shortwave_flux
+    - alias: Fall_flxdst1
+      standard_name: surface_upward_dust_flux_due_to_bin1_particles
+    - alias: Fall_flxdst2
+      standard_name: surface_upward_dust_flux_due_to_bin2_particles
+    - alias: Fall_flxdst3
+      standard_name: surface_upward_dust_flux_due_to_bin3_particles
+    - alias: Fall_flxdst4
+      standard_name: surface_upward_dust_flux_due_to_bin4_particles
